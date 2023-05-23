@@ -1,0 +1,36 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.meet.chat"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.meet.chat"
+    },
+    "cordova-plugin-pdialog": {
+      "PACKAGE_NAME": "com.meet.chat"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.meet.chat"
+    },
+    "cordova-plugin-admobpro": {
+      "ADMOB_ANDROID_APP_ID": "ca-app-pub-2108590561691007~9713428371",
+      "PLAY_SERVICES_VERSION": "22.1.0",
+      "PACKAGE_NAME": "com.meet.chat"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.meet.chat"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-extension": {
+      "PACKAGE_NAME": "com.meet.chat"
+    }
+  }
+}

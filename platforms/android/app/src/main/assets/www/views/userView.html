@@ -1,0 +1,26 @@
+<div class="modal">
+    <header class="bar bar-header bar-assertive">
+        <h1 class="title" style="font-size: 14px !important; text-align: left !important;" >
+			<img style="width: 40px; height: 40px;  border-radius: 50%;" ng-src="{{user.ThumbName}}" />
+			{{user.userInfo}}
+		</h1>   
+		<div class="buttons">	    	
+			<button class="button button-clear" ng-click="block_user(user)"><i class="icon ion-minus-circled"></i></button>		
+			<button class="button button-clear" ng-click="report_user(user)"><i class="icon ion-android-alert"></i></button>
+			<button class="button button-clear" ng-click="OnCloseUserView()"><i class="icon ion-android-close"></i></button>
+		</div>
+    </header>
+	
+	<div class="list card" style="top: 38px;">
+	
+	  <div class="item item-image">		
+		<ion-scroll zooming="true" direction="xy" min-zoom="1">
+			<img class="full-image" src="{{user.ImageName}}" style="height: 100%;"/>	
+		</ion-scroll>				
+	  </div>
+
+	</div>
+</div>
+
+
+

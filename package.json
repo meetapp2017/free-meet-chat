@@ -1,0 +1,43 @@
+{
+  "name": "com.meet.chat",
+  "displayName": "meet_chat",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^11.0.0",
+    "cordova-plugin-device": "^2.1.0",
+    "cordova-plugin-inappbrowser": "^5.0.0",
+    "cordova-plugin-pdialog": "^2.0.1",
+    "cordova-plugin-splashscreen": "^6.0.1"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-pdialog": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-admobpro": {
+        "PLAY_SERVICES_VERSION": "22.1.0",
+        "ADMOB_ANDROID_APP_ID": "ca-app-pub-2108590561691007~9713428371"
+      },
+      "ionic-plugin-keyboard": {}
+    }
+  },
+  "dependencies": {
+    "cordova-plugin-admobpro": "8.13.1",
+    "cordova-plugin-extension": "1.6.0",
+    "ionic-plugin-keyboard": "2.2.1"
+  }
+}

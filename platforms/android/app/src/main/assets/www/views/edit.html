@@ -1,0 +1,39 @@
+<div class="modal">
+    <header class="bar bar-header bar-assertive">
+        <h1 class="title">Profile</h1>        			
+    </header>
+    <ion-content has-header="true">	 
+		<div class="list card" style="top: 50px;">
+			
+			<h1 style="text-align: center;">Meet Chat</h1>
+			<p style="text-align: center;">Please create an account for yourself by using the form below!</p> 	
+			
+			<label class="item item-input item-floating-label">
+			  <input type="text" placeholder="UserName" ng-model="profile.username" ng-click="showKeyboard()" is-focused="true">
+			</label>
+			
+			
+			<label class="item item-input item-select">
+				<div class="input-label">Gender</div>
+				<select ng-model="profile.gender" ng-options="gender.name for gender in genders">
+					<option value="">-Select gender-</option>
+				</select>
+			</label>
+		
+			<label  class="item item-input item-select">
+				<div class="input-label">Age</div>
+				<select ng-model="profile.age" ng-options="age.age for age in ages">
+					<option value="">-Select age-</option>
+				</select>
+			</label>
+			
+			<div class="padding">
+			  <button class="button button-full button-assertive button-stable" ng-click="OnUpdateProfile()">Done</button>
+			</div>
+			
+		   
+      </div>
+	  
+    </ion-content>
+</div>
+

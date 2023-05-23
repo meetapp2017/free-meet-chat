@@ -1,0 +1,22 @@
+<div class="modal">
+    <header class="bar bar-header bar-dark">
+        <h1 class="title">Accept the service terms</h1>        		 		
+		<button class="button button-clear" ng-click="close_terms()"><i class="icon ion-android-arrow-back"></i></button>		
+    </header>
+     
+   <ion-content scroll="false" has-header="true" style="top: 42px;">	
+			<div class="padding">
+				<p>Complete registration</p>
+				<h4 style="color: #2d2d2d;">By registering you agree to the</h4>
+				<button class="button button-full button-assertive button-stable" ng-click="open_privacy();"><strong>Privacy Policy</strong></button>
+				<button class="button button-full button-assertive button-stable" ng-click="open_terms();"><strong>Terms & Conditions</strong></button>
+			</div>
+			
+			<div class="padding" style="text-align: center;">
+				<button class="button button button-positive button-stable" ng-click="close_terms();">Decline</button>
+				<button class="button button button-balanced button-stable" ng-click="done();">Accept</button>
+			</div>
+			
+    </ion-content>
+	
+</div>
