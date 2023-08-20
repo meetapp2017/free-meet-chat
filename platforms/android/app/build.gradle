@@ -190,7 +190,7 @@ android {
         targetSdkVersion cordovaConfig.SDK_VERSION
         compileSdkVersion cordovaConfig.COMPILE_SDK_VERSION
 
-        versionCode 23
+        versionCode 24
         versionName "2.0"
     }
 
@@ -298,7 +298,7 @@ dependencies {
 
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
-    implementation "com.google.android.gms:play-services-ads:22.1.0"
+    implementation "com.google.android.gms:play-services-ads:22.2.0"
     // SUB-PROJECT DEPENDENCIES END
 }
 
