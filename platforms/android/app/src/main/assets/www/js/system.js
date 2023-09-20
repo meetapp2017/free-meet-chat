@@ -615,6 +615,7 @@ freeChat.factory('system', function ($rootScope, $q, $timeout, $window, $ionicMo
 			var message = {
 				user_id : '12345' + '_' + mainObject.profile.username,
 				username : mainObject.profile.username,
+				c_username : mainObject.profile.username,
 				gender: mainObject.profile.gender,
 				age: mainObject.profile.age,
 				date : mainObject.timeNow(true),
@@ -624,13 +625,18 @@ freeChat.factory('system', function ($rootScope, $q, $timeout, $window, $ionicMo
 			}
 
 			mainObject.sendChatMessage(message);
+			
+			$scope.messages.push(message);
+			$timeout(function() {			
+				$ionicScrollDelegate.scrollBottom(true);
+			}, 500);	
 
 		},
 
 
 		sendChatMessage: function (message) {
-
-			Chat.send_group_message(message, this.socket);
+				
+			//Chat.send_group_message(message, this.socket);
 			this.save_group_chat_Message(message);
 
 		},

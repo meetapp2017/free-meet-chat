@@ -190,7 +190,7 @@ android {
         targetSdkVersion cordovaConfig.SDK_VERSION
         compileSdkVersion cordovaConfig.COMPILE_SDK_VERSION
 
-        versionCode 24
+        versionCode 25
         versionName "2.0"
     }
 
